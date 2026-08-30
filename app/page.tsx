@@ -1,11 +1,11 @@
 const sections = [
   {
     number: "01",
-    title: "WELCOME TO OUR CEREMONY",
+    title: "Welcome to Anh & Diego Ceremony",
   },
   {
     number: "02",
-    title: "The Day",
+    title: "Program",
   },
   {
     number: "03",
@@ -28,7 +28,7 @@ export default function Home() {
 
         <p className="date">12.09.2026</p>
 
-        <p className="location">Drnovice, Czech Republic</p>
+        <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic</p>
 
         <div className="notice">
           <strong>Please note:</strong> There are two villages in the Czech
@@ -42,7 +42,7 @@ export default function Home() {
 
         <p>We would love to invite you to a day that is truly special to us and our families.</p>
 
-        <p>Lễ Ăn Hỏi is a traditional Vietnamese ceremony where the bride’s and groom’s families come together. 
+        <p>Lễ Ăn Hỏi is a traditional Vietnamese engagement ceremony where the bride’s and groom’s families come together. 
           The groom’s family formally comes to ask for the bride’s hand and brings symbolic gifts to her family. 
           The ceremony also includes a traditional tea ceremony, which represents respect and gratitude towards parents and older generations.
         </p>
@@ -52,12 +52,12 @@ export default function Home() {
 
         <p>For us, this day will be even more special because our loved ones will be coming together from different parts of the world — Vietnam, Mexico, the Czech Republic and Germany.</p>
 
-        <p>We have decided to celebrate this tradition in our own way — a little traditional, a little western, and most importantly, surrounded by the people who are close to us.</p>
+        <p>We have decided to celebrate this tradition in our own way — a little traditional and most importantly, surrounded by the people who are close to us.</p>
 
         <p>And because this will be our only celebration together in Europe, we would really love to have you there with us.</p>
       </section>
 
-      {/* 02 — The Day */}
+      {/* 02 — Program */}
       <section className="section">
         <p className="section-number">{sections[1].number}</p>
 
@@ -67,7 +67,7 @@ export default function Home() {
           <h3>Lễ Ăn Hỏi &amp; Tea Ceremony</h3>
 
           <p className="event-date">Saturday, 12 September 2026</p>
-          <p className="event-time">10:00 AM</p>
+          <p className="event-time">Starting at 10:00 AM</p>
 
           <p>
             We will begin the morning with a traditional Vietnamese{" "}
@@ -77,8 +77,7 @@ export default function Home() {
           </p>
 
           <p>
-            After the ceremony, we will all head to lunch and continue the
-            celebration together.
+            After the ceremony, we will all head to the cultural centre for pictures and lunch and continue the celebration together.
           </p>
         </div>
 
@@ -128,7 +127,7 @@ export default function Home() {
 
           <p>
             Drnovice is approximately <strong>25 minutes by car from Brno</strong>,
-            which offers the widest choice of hotels, Airbnbs, restaurants, breweries and
+            which offers more choices of hotels, Airbnbs, restaurants, breweries and
             other things to do.
           </p>
         </div>
