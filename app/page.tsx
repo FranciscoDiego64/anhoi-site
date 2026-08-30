@@ -72,9 +72,19 @@ export default function Home() {
 
         <div className="event">
           <h3>Lễ Ăn Hỏi &amp; Tea Ceremony</h3>
+           <p className="event-time">10:00 AM</p>
 
-          <p className="event-date">Saturday, 12 September 2026</p>
-          <p className="event-time">Starting at 10:00 AM</p>
+                  <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic
+            <br />
+            <a href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9" 
+              target="_blank"
+              rel="noreferrer" >
+              View location
+            </a>
+        </p>
+
+        {/* <p className="event-date">Saturday, 12 September 2026</p> */}
+         
 
           <p>
             We will begin the morning with a traditional Vietnamese{" "}
@@ -83,9 +93,7 @@ export default function Home() {
             officially come together.
           </p>
 
-          <p>
-            After the ceremony, we will all head to the cultural centre for pictures and lunch and continue the celebration together.
-          </p>
+  
         </div>
 
         <div className="event">
@@ -95,7 +103,7 @@ export default function Home() {
 
           <h4>Kulturní dům Drnovice</h4>
 
-          <p>
+          <p className="location">
             Drnovice 713, 683 04 Drnovice {" "}
             <br />
             <a href="https://www.google.com/maps/place/Kulturn%C3%AD+d%C5%AFm,+Drnovice/@49.2763588,16.9524474,17z/data=!3m1!4b1!4m6!3m5!1s0x4712f00dc79b0d5b:0x172faeb844c93fd1!8m2!3d49.2763588!4d16.9524474!16s%2Fg%2F11b7dv6ctc?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" 
@@ -103,7 +111,9 @@ export default function Home() {
               rel="noreferrer" >
               View location
             </a>
-
+          </p>
+          <p>
+            After the ceremony, we will all head to the cultural centre for pictures and lunch and continue the celebration together.
           </p>
         </div>
       </section>
@@ -205,8 +215,8 @@ export default function Home() {
         </p>
 
         <p>
-          We are looking forward to good food, tea, laughter, meeting our
-          families and, most importantly, spending a beautiful day together.
+          We are looking forward to good food, tea, meeting our
+          families, and most importantly, spending a beautiful day together.
         </p>
 
         <p className="see-you">See you on 12 September 2026 🤍</p>
