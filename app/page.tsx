@@ -28,7 +28,14 @@ export default function Home() {
 
         <p className="date">12.09.2026</p>
 
-        <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic</p>
+        <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic
+            <br />
+            <a href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9" 
+              target="_blank"
+              rel="noreferrer" >
+              View location
+            </a>
+        </p>
 
         <div className="notice">
           <strong>Please note:</strong> There are two villages in the Czech
@@ -91,9 +98,12 @@ export default function Home() {
           <p>
             Drnovice 713, 683 04 Drnovice {" "}
             <br />
-            <a href="#" target="https://www.google.com/maps/place/Kulturn%C3%AD+d%C5%AFm,+Drnovice/@49.2763588,16.9524474,17z/data=!3m1!4b1!4m6!3m5!1s0x4712f00dc79b0d5b:0x172faeb844c93fd1!8m2!3d49.2763588!4d16.9524474!16s%2Fg%2F11b7dv6ctc?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" rel="noreferrer">
-              View location on Google Maps
+            <a href="https://www.google.com/maps/place/Kulturn%C3%AD+d%C5%AFm,+Drnovice/@49.2763588,16.9524474,17z/data=!3m1!4b1!4m6!3m5!1s0x4712f00dc79b0d5b:0x172faeb844c93fd1!8m2!3d49.2763588!4d16.9524474!16s%2Fg%2F11b7dv6ctc?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" 
+              target="_blank"
+              rel="noreferrer" >
+              View location
             </a>
+
           </p>
         </div>
       </section>
@@ -126,7 +136,7 @@ export default function Home() {
           </p>
 
           <p>
-            Drnovice is approximately <strong>25 minutes by car from Brno</strong>,
+            Drnovice is approximately <strong>35 minutes by car from Brno</strong>,
             which offers more choices of hotels, Airbnbs, restaurants, breweries and
             other things to do.
           </p>
@@ -163,10 +173,12 @@ export default function Home() {
           <p>
             <strong>Parking location:</strong>
             <br />
-            37926, 683 04 Drnovice{" "}
+            Parkoviště u stadionu, 37926, 683 04 Drnovice{" "}
             <br />
-            <a href="#" target="https://www.google.com/maps/place/Parkovi%C5%A1t%C4%9B+u+stadionu/@49.276755,16.9485374,653m/data=!3m1!1e3!4m6!3m5!1s0x4712f00dc607e4ef:0xf1092bc4d33e744a!8m2!3d49.2760631!4d16.952489!16s%2Fg%2F11bz0p6wxh?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" rel="noreferrer">
-              View location on Google Maps
+            <a href="https://www.google.com/maps/place/Parkovi%C5%A1t%C4%9B+u+stadionu/@49.276755,16.9485374,653m/data=!3m1!1e3!4m6!3m5!1s0x4712f00dc607e4ef:0xf1092bc4d33e744a!8m2!3d49.2760631!4d16.952489!16s%2Fg%2F11bz0p6wxh?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" 
+              target="_blank"
+              rel="noreferrer" >
+              View location
             </a>
           </p>
         </div>
