@@ -1,26 +1,172 @@
-@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f6f1;
+  --foreground: #292722;
+  --muted: #77736b;
+  --line: #d9d5cc;
+  --accent: #6d6558;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 110px 70px;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-number {
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+h1 {
+  max-width: 700px;
+  margin: 0;
+  font-size: clamp(48px, 8vw, 88px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin: 0 0 60px;
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin: 0 0 18px;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.date {
+  margin: 50px 0 4px;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.location {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.notice {
+  max-width: 650px;
+  margin-top: 55px;
+  padding: 22px 24px;
+  border-left: 1px solid var(--accent);
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.content-section {
+  padding: 0 70px 110px;
+}
+
+.content-section p,
+.event p,
+.info-block p,
+.closing > p {
+  max-width: 650px;
+  margin: 0 0 22px;
+}
+
+.event,
+.info-block {
+  padding: 35px 0;
+  border-top: 1px solid var(--line);
+}
+
+.event-date {
+  color: var(--muted);
+  margin-bottom: 2px !important;
+}
+
+.event-time {
+  font-size: 20px;
+  margin-bottom: 25px !important;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 4px;
+}
+
+.closing {
+  padding-bottom: 140px;
+}
+
+.see-you {
+  margin-top: 70px !important;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+}
+
+.names {
+  font-family: "Playfair Display", serif;
+  font-size: 42px;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 75px 24px;
+  }
+
+  .content-section {
+    padding: 0 24px 75px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+
+  h1 {
+    font-size: clamp(44px, 13vw, 68px);
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  .notice {
+    margin-top: 40px;
+  }
 }
