@@ -20,6 +20,17 @@ const sections = [
 export default function Home() {
   return (
     <main>
+
+  <div className="plant plant-left" aria-hidden="true">
+    <img src="/plants/plant-left.png" alt="" />
+  </div> 
+
+  <div className="plant plant-right" aria-hidden="true">
+    <img src="/plants/plant-right.png" alt="" />
+  </div>
+
+
+  {/* your existing content */}
       {/* 01 — Welcome */}
       <section className="hero section">
         <p className="section-number">{sections[0].number}</p>
@@ -196,6 +207,14 @@ export default function Home() {
 
       {/* 04 — Closing */}
       <section className="closing section">
+
+          <div className="plant plant-test-left" aria-hidden="true">
+    <img src="/plants/plant-left.png" alt="" />
+  </div>
+
+  <div className="plant plant-test-right" aria-hidden="true">
+    <img src="/plants/plant-right.png" alt="" />
+  </div>
         <p className="section-number">{sections[3].number}</p>
 
         <h2>{sections[3].title}</h2>
