@@ -214,6 +214,84 @@ export const translations = {
     seeYou: "Hẹn gặp bạn vào ngày 12 tháng 9 năm 2026 🤍",
   },
 
+  de: {
+    language: "DE",
+  welcomeLine1: "Willkommen",
+  welcomeLine2: "zur Zeremonie von",
+  welcomeLine3: "Anh & Diego",
+  program: "Programm",
+  practical: "Praktische Informationen",
+  closing: "Wir freuen uns darauf, euch zu sehen",
+  viewLocation: "Ort anzeigen",
+  pleaseNote: "Wichtig:",
+  twoVillages:
+    "In der Tschechischen Republik gibt es zwei Orte namens Drnovice. Bitte verwendet bei der Reiseplanung die",
+  postcode: "richtige Postleitzahl: 683 04",
+  journey: "für eure Anreise.",
+  leiAnHoi: "Lễ Ăn Hỏi",
+
+  intro1:
+    "Wir würden uns sehr freuen, wenn ihr diesen ganz besonderen Tag mit uns und unseren Familien verbringen würdet.",
+
+  intro2:
+    "Lễ Ăn Hỏi ist eine traditionelle vietnamesische Verlobungszeremonie, bei der die Familien der Braut und des Bräutigams zusammenkommen. Die Familie des Bräutigams kommt offiziell, um um die Hand der Braut zu bitten, und bringt symbolische Geschenke für ihre Familie mit. Die Zeremonie umfasst auch eine traditionelle Teezeremonie, die Respekt und Dankbarkeit gegenüber den Eltern und älteren Generationen zum Ausdruck bringt.",
+
+  intro3:
+    "In der vietnamesischen Kultur ist Lễ Ăn Hỏi ein sehr bedeutender Anlass. Es geht nicht nur um zwei Menschen, sondern vor allem darum, zwei Familien miteinander zu verbinden.",
+
+  intro4:
+    "Für uns wird dieser Tag noch besonderer, weil unsere Liebsten aus verschiedenen Teilen der Welt zusammenkommen — aus Vietnam, Mexiko, der Tschechischen Republik und Deutschland.",
+
+  intro5:
+    "Wir haben uns entschieden, diese Tradition auf unsere eigene Art zu feiern — ein wenig traditionell und vor allem umgeben von den Menschen, die wir lieben.",
+
+  intro6:
+    "Und da dies unsere einzige gemeinsame Feier in Europa sein wird, würden wir uns sehr freuen, wenn ihr dabei seid und diesen besonderen Tag mit uns teilt.",
+
+  teaCeremony: "Lễ Ăn Hỏi und Teezeremonie",
+  teaDescription:
+    "Wir beginnen den Morgen mit einer traditionellen vietnamesischen Teezeremonie, gefolgt von der Lễ Ăn Hỏi-Zeremonie, bei der unsere Familien offiziell zusammenkommen.",
+
+  lunch: "Mittagessen und Feier",
+  lunchDescription:
+    "Nach der Zeremonie gehen wir gemeinsam zum Kulturhaus, um Fotos zu machen, zu Mittag zu essen und weiter gemeinsam zu feiern.",
+
+  dressCode: "Kleiderordnung",
+  formalElegant: "Festlich / Elegant",
+  dressDescription:
+    "Es gibt keine bestimmte traditionelle Kleiderordnung. Kommt einfach elegant gekleidet und bereit zum Feiern.",
+
+  whereToStay: "Übernachtung",
+  stayDescription1:
+    "Wenn ihr von weiter her anreist, empfehlen wir, in Brünn zu übernachten.",
+  stayDescription2:
+    "Drnovice ist etwa 35 Minuten mit dem Auto von Brünn entfernt. Dort findet ihr eine größere Auswahl an Hotels, Airbnbs, Restaurants, Brauereien und anderen Aktivitäten.",
+
+  transportation: "Anreise",
+  transportDescription1:
+    "Wenn ihr einen Transport von Brünn benötigt, schickt uns bitte im Voraus die Adresse eures Hotels oder eurer Unterkunft.",
+  transportDescription2:
+    "Wir organisieren morgens ein Auto, das euch abholt — ungefähr zwischen 8:40 und 9:20 Uhr, abhängig vom Standort eurer Unterkunft. Wir organisieren auch die Rückfahrt zu eurem Hotel.",
+
+  parking: "Parken",
+  parkingDescription:
+    "Neben dem Kulturhaus gibt es kostenlose Parkplätze mit ausreichend Platz für alle unsere Gäste.",
+  parkingLocation: "Parkplatz:",
+
+  closing1:
+    "Für uns wird dieser Tag viel mehr als nur eine weitere Feier sein.",
+  closing2:
+    "Es wird der Tag sein, an dem unsere beiden Familien sich zum ersten Mal kennenlernen, wir unsere Wurzeln feiern und gemeinsam etwas Neues schaffen.",
+  closing3:
+    "Und wir freuen uns sehr, diesen besonderen Moment mit euch zu teilen.",
+  closing4:
+    "Wir freuen uns auf gutes Essen, Tee, das Kennenlernen unserer Familien und vor allem darauf, gemeinsam einen wunderschönen Tag zu verbringen.",
+
+  seeYou: "Wir sehen uns am 12. September 2026 🤍",
+},
+
+  
+
     es: {
     language: "ES",
 

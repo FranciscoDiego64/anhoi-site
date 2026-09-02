@@ -25,7 +25,7 @@ export default function Home() {
       </div>
 
       <nav className="language-menu" aria-label="Language selection">
-        {(["en", "cz", "vn", "es"] as Language[]).map((lang) => (
+        {(["en", "cz", "vn", "de", "es"] as Language[]).map((lang) => (
           <button
             key={lang}
             type="button"
