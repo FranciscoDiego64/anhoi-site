@@ -274,27 +274,28 @@ a:hover {
 .plant-closing-right {
   position: absolute;
   z-index: 0;
-  width: 300px;
-  opacity: 0.55;
   pointer-events: none;
+  opacity: 0.70;
 }
 
-
 .plant-closing-left {
-  left: 0;
-  bottom: 0;
-  transform: scaleY(-1);
+  left: -30px;
+  bottom: 200px;
+  width: 200px;
 }
 
 .plant-closing-right {
-  right: 0;
-  bottom: 0;
-  transform: scaleX(-1);
+  right: -40px;
+  bottom: 140px;
+  width: 220px;
 }
 
-
-
-
+.plant-closing-left img,
+.plant-closing-right img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .closing > p,
 .closing > h2 {
