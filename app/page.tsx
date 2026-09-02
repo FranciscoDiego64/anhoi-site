@@ -1,131 +1,131 @@
+"use client";
+
+import { useState } from "react";
+import { translations, Language } from "./translations";
+
 const sections = [
-  {
-    number: "01",
-    title: "Welcome to Anh & Diego Ceremony",
-  },
-  {
-    number: "02",
-    title: "Program",
-  },
-  {
-    number: "03",
-    title: "Practical Information",
-  },
-  {
-    number: "04",
-    title: "We’re Looking Forward to Seeing You",
-  },
+  { number: "01" },
+  { number: "02" },
+  { number: "03" },
+  { number: "04" },
 ];
 
 export default function Home() {
+  const [language, setLanguage] = useState<Language>("en");
+  const t = translations[language];
+
   return (
     <main>
+      <div className="plant plant-left" aria-hidden="true">
+        <img src="/plants/plant-left.png" alt="" />
+      </div>
 
-  <div className="plant plant-left" aria-hidden="true">
-    <img src="/plants/plant-left.png" alt="" />
-  </div> 
+      <div className="plant plant-right" aria-hidden="true">
+        <img src="/plants/plant-right.png" alt="" />
+      </div>
 
-  <div className="plant plant-right" aria-hidden="true">
-    <img src="/plants/plant-right.png" alt="" />
-  </div>
+      <nav className="language-menu" aria-label="Language selection">
+        {(["en", "cz", "vn", "es"] as Language[]).map((lang) => (
+          <button
+            key={lang}
+            type="button"
+            className={language === lang ? "active" : ""}
+            onClick={() => setLanguage(lang)}
+          >
+            {translations[lang].language}
+          </button>
+        ))}
+      </nav>
 
-
-  {/* your existing content */}
       {/* 01 — Welcome */}
       <section className="hero section">
         <p className="section-number">{sections[0].number}</p>
 
-        <h1>{sections[0].title}</h1>
+        <h1>{t.welcome}</h1>
 
         <p className="date">12.09.2026</p>
 
-        <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic
-            <br />
-            <a href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9" 
-              target="_blank"
-              rel="noreferrer" >
-              View location
-            </a>
+        <p className="location">
+          Drnovice 130, 683 04 Drnovice, Czech Republic
+          <br />
+          <a
+            href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.viewLocation}
+          </a>
         </p>
 
         <div className="notice">
-          <strong>Please note:</strong> There are two villages in the Czech
-          Republic called Drnovice. Please make sure you use the correct{" "}
-          <strong>postcode: 683 04</strong> when planning your journey.
+          <strong>{t.pleaseNote}</strong>{" "}
+          {t.twoVillages} <strong>{t.postcode}</strong> {t.journey}
         </div>
       </section>
 
+      {/* Lễ Ăn Hỏi introduction */}
       <section className="content-section">
-        <h2>Lễ Ăn Hỏi</h2>
+        <h2>{t.leiAnHoi}</h2>
 
-        <p>We would love to invite you to a day that is truly special to us and our families.</p>
+        <p>{t.intro1}</p>
 
-        <p>Lễ Ăn Hỏi is a traditional Vietnamese engagement ceremony where the bride’s and groom’s families come together. 
-          The groom’s family formally comes to ask for the bride’s hand and brings symbolic gifts to her family. 
-          The ceremony also includes a traditional tea ceremony, which represents respect and gratitude towards parents and older generations.
-        </p>
+        <p>{t.intro2}</p>
 
-        <p>In Vietnamese culture, Lễ Ăn Hỏi is a very meaningful occasion. 
-          It is not only about two people, but above all about bringing two families together.</p>
+        <p>{t.intro3}</p>
 
-        <p>For us, this day will be even more special because our loved ones will be coming together from different parts of the world — Vietnam, Mexico, the Czech Republic and Germany.</p>
+        <p>{t.intro4}</p>
 
-        <p>We have decided to celebrate this tradition in our own way — a little traditional and most importantly, surrounded by the people who are close to us.</p>
+        <p>{t.intro5}</p>
 
-        <p>And because this will be our only celebration together in Europe, we would really love to have you there with us.</p>
+        <p>{t.intro6}</p>
       </section>
 
       {/* 02 — Program */}
       <section className="section">
         <p className="section-number">{sections[1].number}</p>
 
-        <h2>{sections[1].title}</h2>
+        <h2>{t.program}</h2>
 
         <div className="event">
-          <h3>Lễ Ăn Hỏi &amp; Tea Ceremony</h3>
-           <p className="event-time">10:00 AM</p>
+          <h3>{t.teaCeremony}</h3>
 
-                  <p className="location">Drnovice 130, 683 04 Drnovice, Czech Republic
+          <p className="event-time">10:00 AM</p>
+
+          <p className="location">
+            Drnovice 130, 683 04 Drnovice, Czech Republic
             <br />
-            <a href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9" 
+            <a
+              href="https://maps.app.goo.gl/7B8MaTMBnnsBZQPg9"
               target="_blank"
-              rel="noreferrer" >
-              View location
+              rel="noreferrer"
+            >
+              {t.viewLocation}
             </a>
-        </p>
-
-        {/* <p className="event-date">Saturday, 12 September 2026</p> */}
-         
-
-          <p>
-            We will begin the morning with a traditional Vietnamese{" "}
-            <strong>tea ceremony</strong>, followed by the{" "}
-            <strong>Lễ Ăn Hỏi</strong> ceremony, where our families will
-            officially come together.
           </p>
 
-  
+          <p>{t.teaDescription}</p>
         </div>
 
         <div className="event">
-          <h3>Lunch &amp; Celebration</h3>
+          <h3>{t.lunch}</h3>
 
           <p className="event-time">12:00 PM</p>
 
           <h4>Kulturní dům Drnovice</h4>
 
           <p className="location">
-            Drnovice 713, 683 04 Drnovice {" "}
+            Drnovice 713, 683 04 Drnovice
             <br />
-            <a href="https://www.google.com/maps/place/Kulturn%C3%AD+d%C5%AFm,+Drnovice/@49.2763588,16.9524474,17z/data=!3m1!4b1!4m6!3m5!1s0x4712f00dc79b0d5b:0x172faeb844c93fd1!8m2!3d49.2763588!4d16.9524474!16s%2Fg%2F11b7dv6ctc?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" 
+            <a
+              href="https://www.google.com/maps/place/Kulturn%C3%AD+d%C5%AFm,+Drnovice/@49.2763588,16.9524474,17z/data=!3m1!4b1!4m6!3m5!1s0x4712f00dc79b0d5b:0x172faeb844c93fd1!8m2!3d49.2763588!4d16.9524474!16s%2Fg%2F11b7dv6ctc?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              rel="noreferrer" >
-              View location
+              rel="noreferrer"
+            >
+              {t.viewLocation}
             </a>
           </p>
-          <p>
-            After the ceremony, we will all head to the cultural centre for pictures and lunch and continue the celebration together.
-          </p>
+
+          <p>{t.lunchDescription}</p>
         </div>
       </section>
 
@@ -133,73 +133,50 @@ export default function Home() {
       <section className="section">
         <p className="section-number">{sections[2].number}</p>
 
-        <h2>{sections[2].title}</h2>
+        <h2>{t.practical}</h2>
 
         <div className="info-block">
-          <h3>Dress Code</h3>
+          <h3>{t.dressCode}</h3>
 
           <p>
-            <strong>Formal / Elegant</strong>
+            <strong>{t.formalElegant}</strong>
           </p>
 
-          <p>
-            There is no specific traditional dress code. Simply come{" "}
-            <strong>dressed elegantly and ready to celebrate</strong>.
-          </p>
+          <p>{t.dressDescription}</p>
         </div>
 
         <div className="info-block">
-          <h3>Where to Stay</h3>
+          <h3>{t.whereToStay}</h3>
 
-          <p>
-            If you are travelling from further away, we recommend staying in{" "}
-            <strong>Brno</strong>.
-          </p>
+          <p>{t.stayDescription1}</p>
 
-          <p>
-            Drnovice is approximately <strong>35 minutes by car from Brno</strong>,
-            which offers more choices of hotels, Airbnbs, restaurants, breweries and
-            other things to do.
-          </p>
+          <p>{t.stayDescription2}</p>
         </div>
 
         <div className="info-block">
-          <h3>Transportation</h3>
+          <h3>{t.transportation}</h3>
 
-          <p>
-            If you would like a ride from Brno,{" "}
-            <strong>
-              please send us the address of your hotel or accommodation in
-              advance
-            </strong>
-            .
-          </p>
+          <p>{t.transportDescription1}</p>
 
-          <p>
-            We will arrange a car to pick you up in the morning, approximately
-            between <strong>8:40 and 9:20 AM</strong>, depending on the
-            location of your accommodation. We will also arrange a car back to
-            your hotel.
-          </p>
+          <p>{t.transportDescription2}</p>
         </div>
 
         <div className="info-block">
-          <h3>Parking</h3>
+          <h3>{t.parking}</h3>
+
+          <p>{t.parkingDescription}</p>
 
           <p>
-            There is <strong>free parking next to the cultural centre</strong>,
-            with plenty of space for all our guests.
-          </p>
-
-          <p>
-            <strong>Parking location:</strong>
+            <strong>{t.parkingLocation}</strong>
             <br />
-            Parkoviště u stadionu, 37926, 683 04 Drnovice{" "}
+            Parkoviště u stadionu, 37926, 683 04 Drnovice
             <br />
-            <a href="https://www.google.com/maps/place/Parkovi%C5%A1t%C4%9B+u+stadionu/@49.276755,16.9485374,653m/data=!3m1!1e3!4m6!3m5!1s0x4712f00dc607e4ef:0xf1092bc4d33e744a!8m2!3d49.2760631!4d16.952489!16s%2Fg%2F11bz0p6wxh?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" 
+            <a
+              href="https://www.google.com/maps/place/Parkovi%C5%A1t%C4%9B+u+stadionu/@49.276755,16.9485374,653m/data=!3m1!1e3!4m6!3m5!1s0x4712f00dc607e4ef:0xf1092bc4d33e744a!8m2!3d49.2760631!4d16.952489!16s%2Fg%2F11bz0p6wxh?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
-              rel="noreferrer" >
-              View location
+              rel="noreferrer"
+            >
+              {t.viewLocation}
             </a>
           </p>
         </div>
@@ -207,38 +184,27 @@ export default function Home() {
 
       {/* 04 — Closing */}
       <section className="closing section">
+        <div className="plant-closing-left" aria-hidden="true">
+          <img src="/plants/plant-left.png" alt="" />
+        </div>
 
-          <div className="plant plant-test-left" aria-hidden="true">
-    <img src="/plants/plant-left.png" alt="" />
-  </div>
+        <div className="plant-closing-right" aria-hidden="true">
+          <img src="/plants/plant-right.png" alt="" />
+        </div>
 
-  <div className="plant plant-test-right" aria-hidden="true">
-    <img src="/plants/plant-right.png" alt="" />
-  </div>
         <p className="section-number">{sections[3].number}</p>
 
-        <h2>{sections[3].title}</h2>
+        <h2>{t.closing}</h2>
 
-        <p>
-          For us, this will be more than just another celebration.
-        </p>
+        <p>{t.closing1}</p>
 
-        <p>
-          It will be the day when{" "}
-          <strong>our two families meet for the first time</strong>, when we
-          celebrate our roots and create something new together.
-        </p>
+        <p>{t.closing2}</p>
 
-        <p>
-          And we are so happy that we can share it with you.
-        </p>
+        <p>{t.closing3}</p>
 
-        <p>
-          We are looking forward to good food, tea, meeting our
-          families, and most importantly, spending a beautiful day together.
-        </p>
+        <p>{t.closing4}</p>
 
-        <p className="see-you">See you on 12 September 2026 🤍</p>
+        <p className="see-you">{t.seeYou}</p>
 
         <p className="names">Anh &amp; Diego</p>
       </section>
