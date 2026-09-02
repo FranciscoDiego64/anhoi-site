@@ -156,6 +156,20 @@ h4 {
   text-align: left;
 }
 
+/* --------------------------------
+   Intro photo
+-------------------------------- */
+
+.intro-photo {
+  width: min(850px, calc(100% - 160px));
+  margin: 20px auto 0;
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* --------------------------------
    Welcome / Intro
@@ -476,5 +490,10 @@ a:hover {
   .plant-closing-left,
   .plant-closing-right {
     width: 190px;
+  }
+
+  .intro-photo {
+    width: calc(100% - 120px);
+    margin-top: 10px;
   }
 }

@@ -67,6 +67,13 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="intro-photo">
+        <img
+          src="/photos/invitation-photo.jpeg"
+          alt="Lễ Ăn Hỏi"
+        />
+      </div>
+
       {/* Lễ Ăn Hỏi introduction */}
       <section className="content-section">
         <h2>{t.leiAnHoi}</h2>
