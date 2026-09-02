@@ -263,7 +263,7 @@ a:hover {
   display: block;
   width: 100%;
   height: auto;
-  opacity: 0.70;
+  opacity: 0.50;
 }
 
 /* Top left */
@@ -299,17 +299,17 @@ a:hover {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.70;
+  opacity: 0.50;
 }
 
 .plant-closing-left {
-  left: -30px;
+  left: -10px;
   bottom: 210px;
   width: 200px;
 }
 
 .plant-closing-right {
-  right: -40px;
+  right: -10px;
   bottom: 240px;
   width: 220px;
 }

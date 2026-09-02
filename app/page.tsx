@@ -69,7 +69,7 @@ export default function Home() {
 
       <div className="intro-photo">
         <img
-          src="/photos/invitation-photo.jpeg"
+          src="/photos/invitation-photo2.jpeg"
           alt="Lễ Ăn Hỏi"
         />
       </div>
