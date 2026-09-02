@@ -214,7 +214,7 @@ export const translations = {
     welcome: "Bienvenidos a la ceremonia de Anh & Diego",
     program: "Programa",
     practical: "Información práctica",
-    closing: "Estamos deseando veros",
+    closing: "Estamos deseando verlos",
 
     viewLocation: "Ver ubicación",
 
