@@ -2,7 +2,9 @@ export const translations = {
   en: {
     language: "EN",
 
-    welcome: "Welcome to Anh & Diego Ceremony",
+    welcomeLine1: "Welcome to ",
+    welcomeLine2: "Anh & Diego ",
+    welcomeLine3: "Ceremony",
     program: "Program",
     practical: "Practical Information",
     closing: "We’re Looking Forward to Seeing You",
@@ -71,7 +73,9 @@ export const translations = {
   cz: {
     language: "CZ",
 
-    welcome: "Vítejte na obřadu Anh & Diego",
+    welcomeLine1: "Vítejte na",
+    welcomeLine2: "Anh & Diego",
+    welcomeLine3: "obřadu",
     program: "Program",
     practical: "Praktické informace",
     closing: "Těšíme se na vás",
@@ -140,7 +144,9 @@ export const translations = {
   vn: {
     language: "VN",
 
-    welcome: "Chào mừng đến với lễ cưới của Anh & Diego",
+    welcomeLine1: "Chào mừng đến với",
+    welcomeLine2: "Lễ Ăn Hỏi của", 
+    welcomeLine3: "Anh & Diego",
     program: "Chương trình",
     practical: "Thông tin thực tế",
     closing: "Chúng tôi rất mong được gặp bạn",
@@ -212,6 +218,9 @@ export const translations = {
     language: "ES",
 
     welcome: "Bienvenidos a la ceremonia de Anh & Diego",
+    welcomeLine1: "Bienvenidos a la",
+    welcomeLine2: "Ceremonia de", 
+    welcomeLine3: "Anh & Diego",
     program: "Programa",
     practical: "Información práctica",
     closing: "Estamos deseando verlos",

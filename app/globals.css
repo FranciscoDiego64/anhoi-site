@@ -119,7 +119,17 @@ h4 {
 
 .hero h1 {
   margin-top: 10px;
-  text-transform: uppercase;
+  text-transform: none;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title span {
+  display: block;
 }
 
 .date {
@@ -280,13 +290,13 @@ a:hover {
 
 .plant-closing-left {
   left: -30px;
-  bottom: 200px;
+  bottom: 300px;
   width: 200px;
 }
 
 .plant-closing-right {
   right: -40px;
-  bottom: 140px;
+  bottom: 240px;
   width: 220px;
 }
 

@@ -41,7 +41,11 @@ export default function Home() {
       <section className="hero section">
         <p className="section-number">{sections[0].number}</p>
 
-        <h1>{t.welcome}</h1>
+        <h1 className="hero-title">
+          <span>{t.welcomeLine1}</span>
+          <span>{t.welcomeLine2}</span>
+          <span>{t.welcomeLine3}</span>
+        </h1>
 
         <p className="date">12.09.2026</p>
 
