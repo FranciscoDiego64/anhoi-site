@@ -213,7 +213,7 @@ export const translations = {
       "Chúng tôi mong chờ những món ăn ngon, những chén trà, được gặp gỡ gia đình hai bên và quan trọng nhất là cùng nhau trải qua một ngày thật đẹp.",
     seeYou: "Hẹn gặp bạn vào ngày 12 tháng 9 năm 2026 🤍",
   },
-
+/*
   de: {
     language: "DE",
   welcomeLine1: "Willkommen",
@@ -289,8 +289,8 @@ export const translations = {
 
   seeYou: "Wir sehen uns am 12. September 2026 🤍",
 },
+*/
 
-  
 
     es: {
     language: "ES",
