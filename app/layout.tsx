@@ -15,8 +15,15 @@ const sans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tina & Jim",
-  description: "Join us for our special day.",
+  title: "Anh & Diego — Lễ Ăn Hỏi",
+  description:
+    "Join Anh & Diego for their Lễ Ăn Hỏi celebration on 12 September 2026 in Drnovice, Czech Republic.",
+  openGraph: {
+    title: "Anh & Diego — Lễ Ăn Hỏi",
+    description:
+      "Join Anh & Diego for their Lễ Ăn Hỏi celebration on 12 September 2026 in Drnovice, Czech Republic.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
