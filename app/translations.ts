@@ -66,7 +66,7 @@ export const translations = {
       "It will be the day when our two families meet for the first time, when we celebrate our roots and create something new together.",
     closing3: "And we are so happy that we can share it with you.",
     closing4:
-      "We are looking forward to good food, tea, meeting our families, and most importantly, spending a beautiful day together.",
+      "We are looking forward to good food, drinks, meeting our families, and most importantly, spending a beautiful day together.",
     seeYou: "See you on 12 September 2026 🤍",
   },
 
@@ -362,7 +362,7 @@ export const translations = {
     closing3:
       "Y estamos muy felices de poder compartirlo contigo.",
     closing4:
-      "Estamos deseando disfrutar de buena comida, té, conocer a nuestras familias y, sobre todo, pasar juntos un día precioso.",
+      "Estamos deseando disfrutar de buena comida, bebidas, conocer a nuestras familias y, sobre todo, pasar juntos un día precioso.",
     seeYou: "Nos vemos el 12 de septiembre de 2026 🤍",
   },
 };
