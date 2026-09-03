@@ -12,6 +12,7 @@ const sections = [
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>("en");
+  const [menuOpen, setMenuOpen] = useState(false);
   const t = translations[language];
 
   return (
@@ -23,6 +24,36 @@ export default function Home() {
       <div className="plant plant-right" aria-hidden="true">
         <img src="/plants/plant-right.png" alt="" />
       </div>
+
+      <button
+  className={`menu-toggle ${menuOpen ? "open" : ""}`}
+  type="button"
+  aria-label="Open menu"
+  aria-expanded={menuOpen}
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  <span />
+  <span />
+  <span />
+</button>
+
+<nav className={`section-menu ${menuOpen ? "open" : ""}`}>
+  <a href="#welcome" onClick={() => setMenuOpen(false)}>
+    Welcome
+  </a>
+
+  <a href="#lei-an-hoi" onClick={() => setMenuOpen(false)}>
+    Program
+  </a>
+
+  <a href="#program" onClick={() => setMenuOpen(false)}>
+    Info
+  </a>
+
+  <a href="#practical" onClick={() => setMenuOpen(false)}>
+    Thank You
+  </a>
+</nav>
 
       <nav className="language-menu" aria-label="Language selection">
         {(["en", "cz", "vn", "es"] as Language[]).map((lang) => (
@@ -38,7 +69,7 @@ export default function Home() {
       </nav>
 
       {/* 01 — Welcome */}
-      <section className="hero section">
+      <section id="welcome" className="hero section">
         <p className="section-number">{sections[0].number}</p>
 
         <h1 className="hero-title">
@@ -75,7 +106,7 @@ export default function Home() {
       </div>
 
       {/* Lễ Ăn Hỏi introduction */}
-      <section className="content-section">
+      <section id="lei-an-hoi" className="content-section">
         <h2>{t.leiAnHoi}</h2>
 
         <p>{t.intro1}</p>
@@ -92,7 +123,7 @@ export default function Home() {
       </section>
 
       {/* 02 — Program */}
-      <section className="section">
+      <section id="program" className="section">
         <p className="section-number">{sections[1].number}</p>
 
         <h2>{t.program}</h2>
@@ -141,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* 03 — Practical Information */}
-      <section className="section">
+      <section id="practical" className="section">
         <p className="section-number">{sections[2].number}</p>
 
         <h2>{t.practical}</h2>

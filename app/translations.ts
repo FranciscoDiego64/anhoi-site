@@ -13,7 +13,7 @@ export const translations = {
 
     pleaseNote: "Please note:",
     twoVillages:
-      "There are two villages in the Czech Republic called Drnovice. Please make sure you use the correct",
+      "There are two villages in Czechia called Drnovice. Please make sure you use the correct",
     postcode: "postcode: 683 04",
     journey: "when planning your journey.",
 
@@ -307,7 +307,7 @@ export const translations = {
 
     pleaseNote: "Importante:",
     twoVillages:
-      "En la República Checa hay dos pueblos llamados Drnovice. Asegúrate de utilizar el",
+      "En Chequia hay dos pueblos llamados Drnovice. Asegúrate de utilizar el",
     postcode: "código postal correcto: 683 04",
     journey: "al planificar tu viaje.",
 
