@@ -123,7 +123,7 @@ export const translations = {
     dressCode: "Dress Code",
     formalElegant: "Formální / Elegantní",
     dressDescription:
-      "Neexistuje žádný specifický tradiční dress code. Přijďte jednoduše elegantně oblečeni a připraveni oslavovat.",
+      "Nemáme žádný specifický tradiční dress code. Přijďte jednoduše elegantně oblečeni a připraveni oslavovat.",
 
     whereToStay: "Ubytování",
     stayDescription1:
