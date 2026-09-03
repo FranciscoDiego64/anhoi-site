@@ -37,21 +37,24 @@ export default function Home() {
   <span />
 </button>
 
-<nav className={`section-menu ${menuOpen ? "open" : ""}`}>
+<nav
+  className={`section-menu ${menuOpen ? "open" : ""}`}
+  aria-label="Section navigation"
+>
   <a href="#welcome" onClick={() => setMenuOpen(false)}>
-    Welcome
-  </a>
-
-  <a href="#lei-an-hoi" onClick={() => setMenuOpen(false)}>
-    Program
+    {t.menuWelcome}
   </a>
 
   <a href="#program" onClick={() => setMenuOpen(false)}>
-    Info
+    {t.menuProgram}
   </a>
 
   <a href="#practical" onClick={() => setMenuOpen(false)}>
-    Thank You
+    {t.menuPractical}
+  </a>
+
+  <a href="#closing" onClick={() => setMenuOpen(false)}>
+    {t.menuClosing}
   </a>
 </nav>
 
@@ -70,7 +73,8 @@ export default function Home() {
 
       {/* 01 — Welcome */}
       <section id="welcome" className="hero section">
-        <p className="section-number">{sections[0].number}</p>
+       <p className="section-number">01</p>
+
 
         <h1 className="hero-title">
           <span>{t.welcomeLine1}</span>
@@ -124,7 +128,7 @@ export default function Home() {
 
       {/* 02 — Program */}
       <section id="program" className="section">
-        <p className="section-number">{sections[1].number}</p>
+        <p className="section-number">02</p>
 
         <h2>{t.program}</h2>
 
@@ -172,8 +176,8 @@ export default function Home() {
       </section>
 
       {/* 03 — Practical Information */}
-      <section id="practical" className="section">
-        <p className="section-number">{sections[2].number}</p>
+    <section id="practical" className="section">
+      <p className="section-number">03</p>
 
         <h2>{t.practical}</h2>
 
@@ -225,8 +229,11 @@ export default function Home() {
       </section>
 
       {/* 04 — Closing */}
-      <section className="closing section">
+      <section id="closing" className="closing section">
+        <p className="section-number">04</p>
+
         <div className="plant-closing-left" aria-hidden="true">
+          
           <img src="/plants/plant-left.png" alt="" />
         </div>
 
@@ -234,7 +241,7 @@ export default function Home() {
           <img src="/plants/plant-right.png" alt="" />
         </div>
 
-        <p className="section-number">{sections[3].number}</p>
+      
 
         <h2>{t.closing}</h2>
 

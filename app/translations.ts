@@ -2,6 +2,11 @@ export const translations = {
   en: {
     language: "EN",
 
+    menuWelcome: "Welcome",
+    menuProgram: "Program",
+    menuPractical: "Info",
+    menuClosing: "Closing",
+
     welcomeLine1: "Welcome to ",
     welcomeLine2: "Anh & Diego ",
     welcomeLine3: "Ceremony",
@@ -73,6 +78,11 @@ export const translations = {
   cz: {
     language: "CZ",
 
+    menuWelcome: "Vítejte",
+    menuProgram: "Program",
+    menuPractical: "Info",
+    menuClosing: "Závěr",
+
     welcomeLine1: "Vítejte na",
     welcomeLine2: "Anh & Diego",
     welcomeLine3: "obřadu",
@@ -143,6 +153,11 @@ export const translations = {
 
   vn: {
     language: "VN",
+
+    menuWelcome: "Chào mừng",
+    menuProgram: "Chương trình",
+    menuPractical: "Thông tin",
+    menuClosing: "Lời kết",
 
     welcomeLine1: "Chào mừng đến với",
     welcomeLine2: "Lễ Ăn Hỏi của", 
@@ -294,6 +309,11 @@ export const translations = {
 
     es: {
     language: "ES",
+
+    menuWelcome: "Bienvenida",
+    menuProgram: "Programa",
+    menuPractical: "Info",
+    menuClosing: "Cierre",
 
     welcome: "Bienvenidos a la ceremonia de Anh & Diego",
     welcomeLine1: "Bienvenidos a la",
